@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ___FILEBASENAMEASIDENTIFIER___Controller {
+final class ___FILEBASENAMEASIDENTIFIER___Controller {
     // MARK: - Injected vars
     weak var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
     
