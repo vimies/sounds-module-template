@@ -11,7 +11,11 @@ import IGListKit
 
 final class ___FILEBASENAMEASIDENTIFIER___DataSectionController: IGListSectionController, IGListSectionType {
     
+    weak var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
+
     private var object: String?
+
+    deinit { printDeinit(file: #file) }
         
     func numberOfItems() -> Int {
         return 1

@@ -34,6 +34,8 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     var loading = false
 
     // MARK: - 
+
+    deinit { printDeinit(file: #file) }
 }
 
 
@@ -85,7 +87,9 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: IGListAdapterDataSource 
         if let obj = object as? String, obj == self.spinnerToken {
             return self.spinnerSectionController
         } else {
-            return ___FILEBASENAMEASIDENTIFIER___DataSectionController()
+            let sectionController = ___FILEBASENAMEASIDENTIFIER___DataSectionController()
+            sectionController.controller = self.controller
+            return sectionController
         }
     }
     

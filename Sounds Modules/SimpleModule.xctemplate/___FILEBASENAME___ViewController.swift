@@ -22,6 +22,8 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     // MARK: - Public vars
 
     // MARK: - 
+
+    deinit { printDeinit(file: #file) }
 }
 
 

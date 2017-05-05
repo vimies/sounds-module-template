@@ -16,7 +16,10 @@ final class ___FILEBASENAMEASIDENTIFIER___Controller {
     
     // MARK: - Private vars
     // MARK: - Public vars
+    
     // MARK: -
+
+    deinit { printDeinit(file: #file) }
 }
 
 
