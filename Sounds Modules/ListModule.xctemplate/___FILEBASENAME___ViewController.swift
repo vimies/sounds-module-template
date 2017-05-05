@@ -24,7 +24,7 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
     var adapter: IGListAdapter!
-    var spinnerSectionControllerType: IGListSectionController.Type!
+    var spinnerSectionController: IGListSectionController!
     
     // MARK: - Private vars
 
@@ -83,7 +83,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: IGListAdapterDataSource 
     
     func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
         if let obj = object as? String, obj == self.spinnerToken {
-            return self.spinnerSectionControllerType.init()
+            return self.spinnerSectionController
         } else {
             return ___FILEBASENAMEASIDENTIFIER___DataSectionController()
         }

@@ -28,7 +28,7 @@ final class ___FILEBASENAMEASIDENTIFIER___StoryboardBuilder: UIStoryboardBuilder
             vc.adapter = IGListAdapter(updater: IGListAdapterUpdater(), viewController: vc, workingRangeSize: 0)
             vc.adapter.dataSource = vc
             vc.adapter.scrollViewDelegate = vc
-            vc.spinnerSectionControllerType = SpinnerSectionController.self
+            vc.spinnerSectionController = r.resolve(SpinnerSectionController.self)
         }
     }
 }
