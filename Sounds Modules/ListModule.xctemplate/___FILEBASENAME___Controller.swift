@@ -9,10 +9,27 @@
 import Foundation
 
 final class ___FILEBASENAMEASIDENTIFIER___Controller {
+    
     // MARK: - Injected vars
+    
     weak var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
     
+    // MARK: - Private vars
+    // MARK: - Public vars
+    // MARK: -
+}
+
+
+// MARK: - Public methods
+
+extension ___FILEBASENAMEASIDENTIFIER___Controller {
     func doSomething() {
         view.displaySomething()
     }
+}
+
+
+// MARK: - Private methods
+
+extension ___FILEBASENAMEASIDENTIFIER___Controller {
 }

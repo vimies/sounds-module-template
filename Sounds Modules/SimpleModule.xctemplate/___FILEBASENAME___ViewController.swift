@@ -11,9 +11,17 @@ import UIKit
 
 final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
+    // MARK: - IBOutlets
+
     // MARK: - Injected vars
     
     var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
+    
+    // MARK: - Private vars
+
+    // MARK: - Public vars
+
+    // MARK: - 
 }
 
 
@@ -39,5 +47,4 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 // MARK: - Private methods
 
 fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController {
-    
 }

@@ -21,15 +21,19 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     @IBOutlet weak var collectionView: IGListCollectionView!
     
     // MARK: - Injected vars
+
     var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
     var adapter: IGListAdapter!
     var spinnerSectionControllerType: IGListSectionController.Type!
     
-    // MARK: - 
-    
+    // MARK: - Private vars
+
+    // MARK: - Public vars
+
     var items: [String] = []
     var loading = false
 
+    // MARK: - 
 }
 
 
