@@ -26,8 +26,8 @@ final class ___FILEBASENAMEASIDENTIFIER___DataSectionController: IGListSectionCo
     }
     
     func cellForItem(at index: Int) -> UICollectionViewCell {
-        assert(true, "Replace UICollectionViewCell with your cell")
-        return collectionContext!.dequeueReusableCell(of: UICollectionViewCell.self, for: self, at: index)
+        fatalError("Replace UICollectionViewCell with your cell")
+        // return collectionContext!.dequeueReusableCell(of: UICollectionViewCell.self, for: self, at: index)
     }
     
     func didUpdate(to object: Any) {
