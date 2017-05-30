@@ -11,7 +11,7 @@ import Swinject
 import SwinjectStoryboard
 import IGListKit
 
-final class ___FILEBASENAMEASIDENTIFIER___StoryboardBuilder: UIStoryboardBuilder {
+final class ___FILEBASENAMEASIDENTIFIER___Builder: UIStoryboardBuilder {
     
     override class var name: String { get { return "___FILEBASENAMEASIDENTIFIER___" } }
     
