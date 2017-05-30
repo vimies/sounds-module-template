@@ -25,7 +25,7 @@ final class ___FILEBASENAMEASIDENTIFIER___StoryboardBuilder: UIStoryboardBuilder
         container.storyboardInitCompleted(___FILEBASENAMEASIDENTIFIER___ViewController.self) { r, vc in
             vc.controller = r.resolve(___FILEBASENAMEASIDENTIFIER___Controller.self)
             vc.controller.view = vc
-            vc.adapter = IGListAdapter(updater: IGListAdapterUpdater(), viewController: vc, workingRangeSize: 0)
+            vc.adapter = ListAdapter(updater: ListAdapterUpdater(), viewController: vc, workingRangeSize: 0)
             vc.adapter.dataSource = vc
             vc.adapter.scrollViewDelegate = vc
             vc.spinnerSectionController = r.resolve(SpinnerSectionController.self)

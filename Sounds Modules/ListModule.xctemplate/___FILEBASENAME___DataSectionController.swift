@@ -9,30 +9,24 @@
 import Foundation
 import IGListKit
 
-final class ___FILEBASENAMEASIDENTIFIER___DataSectionController: IGListSectionController, IGListSectionType {
+final class ___FILEBASENAMEASIDENTIFIER___DataSectionController: ListSectionController {
     
     weak var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
 
     private var object: String?
 
     deinit { printDeinit(file: #file) }
-        
-    func numberOfItems() -> Int {
-        return 1
-    }
 
-    func sizeForItem(at index: Int) -> CGSize {
+    override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 55)
     }
     
-    func cellForItem(at index: Int) -> UICollectionViewCell {
+    override func cellForItem(at index: Int) -> UICollectionViewCell {
         fatalError("Replace UICollectionViewCell with your cell")
         // return collectionContext!.dequeueReusableCell(of: UICollectionViewCell.self, for: self, at: index)
     }
     
-    func didUpdate(to object: Any) {
+    override func didUpdate(to object: Any) {
         self.object = String(describing: object)
     }
-    
-    func didSelectItem(at index: Int) { }
 }

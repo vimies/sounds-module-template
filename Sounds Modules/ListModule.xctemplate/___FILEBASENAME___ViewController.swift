@@ -18,13 +18,13 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var collectionView: IGListCollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Injected vars
 
     var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
-    var adapter: IGListAdapter!
-    var spinnerSectionController: IGListSectionController!
+    var adapter: ListAdapter!
+    var spinnerSectionController: ListSectionController!
     
     // MARK: - Private vars
 
@@ -70,20 +70,20 @@ fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 }
 
 
-// MARK: - IGListAdapterDataSource
+// MARK: - ListAdapterDataSource
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: IGListAdapterDataSource {
-    func objects(for listAdapter: IGListAdapter) -> [IGListDiffable] {
-        var objects = self.items as [IGListDiffable]
+extension ___FILEBASENAMEASIDENTIFIER___ViewController: ListAdapterDataSource {
+    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        var objects = self.items as [ListDiffable]
         
         if loading {
-            objects.append(self.spinnerToken as IGListDiffable)
+            objects.append(self.spinnerToken as ListDiffable)
         }
         
         return objects
     }
     
-    func listAdapter(_ listAdapter: IGListAdapter, sectionControllerFor object: Any) -> IGListSectionController {
+    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         if let obj = object as? String, obj == self.spinnerToken {
             return self.spinnerSectionController
         } else {
@@ -93,7 +93,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: IGListAdapterDataSource 
         }
     }
     
-    func emptyView(for listAdapter: IGListAdapter) -> UIView? {
+    func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
     }
 }
