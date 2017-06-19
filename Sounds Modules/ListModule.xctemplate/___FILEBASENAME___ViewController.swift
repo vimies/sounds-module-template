@@ -30,9 +30,6 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
     // MARK: - Public vars
 
-    var items: [String] = []
-    var loading = false
-
     // MARK: - 
 
     deinit { printDeinit(file: #file) }
@@ -47,7 +44,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
         
         self.adapter.collectionView = self.collectionView
         
-        self.controller.doSomething()
+        self.controller.loadData()
     }
 }
 
@@ -55,7 +52,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 // MARK: - Public methods
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController {
-    func displaySomething() {
+    func updateList() {
         self.adapter.performUpdates(animated: true, completion: nil)
     }
 }
@@ -63,20 +60,16 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 
 // MARK: - Private methods
 
-fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController {
-    func loadNext(completion: () -> Void) {
-        // user reached the end of the list, load next data here
-    }
-}
+fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController { }
 
 
 // MARK: - ListAdapterDataSource
 
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        var objects = self.items as [ListDiffable]
+        var objects = self.controller.items as [ListDiffable]
         
-        if loading {
+        if self.controller.isLoading {
             objects.append(self.spinnerToken as ListDiffable)
         }
         
@@ -104,13 +97,8 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: ListAdapterDataSource {
 extension ___FILEBASENAMEASIDENTIFIER___ViewController: UIScrollViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let distance = scrollView.contentSize.height - (targetContentOffset.pointee.y + scrollView.bounds.height)
-        if !loading && distance < 200 {
-            loading = true
-            adapter.performUpdates(animated: true, completion: nil)
-            self.loadNext {
-                self.loading = false
-                self.adapter.performUpdates(animated: true, completion: nil)
-            }
+        if distance < 200 {
+            self.controller.loadNextData()
         }
     }
 }
