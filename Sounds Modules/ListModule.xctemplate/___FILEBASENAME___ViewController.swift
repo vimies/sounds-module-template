@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import IGListKit
 
-final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController {
     
     // MARK: - Constants
     
@@ -22,7 +22,7 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
     
     // MARK: - Injected vars
 
-    var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
+    var controller: ___VARIABLE_moduleName:identifier___Controller!
     var adapter: ListAdapter!
     var spinnerSectionController: ListSectionController!
     
@@ -38,7 +38,7 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 // MARK: - View lifecycle
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+extension ___VARIABLE_moduleName:identifier___ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,7 +51,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 
 // MARK: - Public methods
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+extension ___VARIABLE_moduleName:identifier___ViewController {
     func updateList() {
         self.adapter.performUpdates(animated: true, completion: nil)
     }
@@ -60,12 +60,12 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 
 // MARK: - Private methods
 
-fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController { }
+fileprivate extension ___VARIABLE_moduleName:identifier___ViewController { }
 
 
 // MARK: - ListAdapterDataSource
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: ListAdapterDataSource {
+extension ___VARIABLE_moduleName:identifier___ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         var objects = self.controller.items as [ListDiffable]
         
@@ -80,7 +80,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: ListAdapterDataSource {
         if let obj = object as? String, obj == self.spinnerToken {
             return self.spinnerSectionController
         } else {
-            let sectionController = ___FILEBASENAMEASIDENTIFIER___DataSectionController()
+            let sectionController = ___VARIABLE_moduleName:identifier___DataSectionController()
             sectionController.controller = self.controller
             return sectionController
         }
@@ -94,7 +94,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController: ListAdapterDataSource {
 
 // MARK: - UIScrollViewDelegate
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController: UIScrollViewDelegate {
+extension ___VARIABLE_moduleName:identifier___ViewController: UIScrollViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let distance = scrollView.contentSize.height - (targetContentOffset.pointee.y + scrollView.bounds.height)
         if distance < 200 {

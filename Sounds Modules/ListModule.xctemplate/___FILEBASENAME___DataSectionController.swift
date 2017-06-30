@@ -9,9 +9,9 @@
 import Foundation
 import IGListKit
 
-final class ___FILEBASENAMEASIDENTIFIER___DataSectionController: ListSectionController {
+final class ___VARIABLE_moduleName:identifier___DataSectionController: ListSectionController {
     
-    weak var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
+    weak var controller: ___VARIABLE_moduleName:identifier___Controller!
 
     private var object: String?
 

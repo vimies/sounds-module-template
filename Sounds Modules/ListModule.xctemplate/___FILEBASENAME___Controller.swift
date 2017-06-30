@@ -8,11 +8,11 @@
 
 import Foundation
 
-final class ___FILEBASENAMEASIDENTIFIER___Controller {
+final class ___VARIABLE_moduleName:identifier___Controller {
     
     // MARK: - Injected vars
     
-    weak var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
+    weak var view: ___VARIABLE_moduleName:identifier___ViewController!
     
 
     // MARK: - Public vars
@@ -35,7 +35,7 @@ final class ___FILEBASENAMEASIDENTIFIER___Controller {
 
 // MARK: - Public methods
 
-extension ___FILEBASENAMEASIDENTIFIER___Controller {
+extension ___VARIABLE_moduleName:identifier___Controller {
     func loadData() {
     	self.fetchNextData()
     }
@@ -48,7 +48,7 @@ extension ___FILEBASENAMEASIDENTIFIER___Controller {
 
 // MARK: - Private methods
 
-extension ___FILEBASENAMEASIDENTIFIER___Controller {
+extension ___VARIABLE_moduleName:identifier___Controller {
 	func fetchNextData() {
 		guard noMorePages == false && isLoading == false else { return }
         isLoading = true

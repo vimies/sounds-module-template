@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
+final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController {
     
     // MARK: - IBOutlets
 
     // MARK: - Injected vars
     
-    var controller: ___FILEBASENAMEASIDENTIFIER___Controller!
+    var controller: ___VARIABLE_moduleName:identifier___Controller!
     
     // MARK: - Private vars
 
@@ -29,7 +29,7 @@ final class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController {
 
 // MARK: - View lifecycle
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+extension ___VARIABLE_moduleName:identifier___ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,7 +40,7 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 
 // MARK: - Public methods
 
-extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+extension ___VARIABLE_moduleName:identifier___ViewController {
     func displaySomething() {
     }
 }
@@ -48,5 +48,5 @@ extension ___FILEBASENAMEASIDENTIFIER___ViewController {
 
 // MARK: - Private methods
 
-fileprivate extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+fileprivate extension ___VARIABLE_moduleName:identifier___ViewController {
 }

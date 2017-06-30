@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--___FILEBASENAMEASIDENTIFIER___ View Controller-->
+        <!--___VARIABLE_moduleName:identifier___ View Controller-->
         <scene sceneID="XIa-LM-yEZ">
             <objects>
-                <viewController storyboardIdentifier="___FILEBASENAMEASIDENTIFIER___ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1XO-Hu-lbz" customClass="___FILEBASENAMEASIDENTIFIER___ViewController" customModule="SOUNDS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="___VARIABLE_moduleName:identifier___ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1XO-Hu-lbz" customClass="___VARIABLE_moduleName:identifier___ViewController" customModule="SOUNDS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oqg-ct-9a9"/>
                         <viewControllerLayoutGuide type="bottom" id="Uzz-XO-yqf"/>

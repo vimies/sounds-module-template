@@ -11,19 +11,19 @@ import Swinject
 import SwinjectStoryboard
 import IGListKit
 
-final class ___FILEBASENAMEASIDENTIFIER___Builder: UIStoryboardBuilder {
+final class ___VARIABLE_moduleName:identifier___Builder: UIStoryboardBuilder {
     
-    override class var name: String { get { return "___FILEBASENAMEASIDENTIFIER___" } }
+    override class var name: String { get { return "___VARIABLE_moduleName:identifier___" } }
     
     override class func setup(container: Container) {
-        container.register(___FILEBASENAMEASIDENTIFIER___Controller.self) { r in
-            let controller = ___FILEBASENAMEASIDENTIFIER___Controller()
+        container.register(___VARIABLE_moduleName:identifier___Controller.self) { r in
+            let controller = ___VARIABLE_moduleName:identifier___Controller()
             // inject workers here
             return controller
         }
         
-        container.storyboardInitCompleted(___FILEBASENAMEASIDENTIFIER___ViewController.self) { r, vc in
-            vc.controller = r.resolve(___FILEBASENAMEASIDENTIFIER___Controller.self)
+        container.storyboardInitCompleted(___VARIABLE_moduleName:identifier___ViewController.self) { r, vc in
+            vc.controller = r.resolve(___VARIABLE_moduleName:identifier___Controller.self)
             vc.controller.view = vc
             vc.adapter = ListAdapter(updater: ListAdapterUpdater(), viewController: vc, workingRangeSize: 0)
             vc.adapter.dataSource = vc

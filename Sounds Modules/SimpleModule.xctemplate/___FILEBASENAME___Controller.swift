@@ -8,11 +8,11 @@
 
 import Foundation
 
-final class ___FILEBASENAMEASIDENTIFIER___Controller {
+final class ___VARIABLE_moduleName:identifier___Controller {
     
     // MARK: - Injected vars
     
-    weak var view: ___FILEBASENAMEASIDENTIFIER___ViewController!
+    weak var view: ___VARIABLE_moduleName:identifier___ViewController!
     
     // MARK: - Private vars
     // MARK: - Public vars
@@ -25,7 +25,7 @@ final class ___FILEBASENAMEASIDENTIFIER___Controller {
 
 // MARK: - Public methods
 
-extension ___FILEBASENAMEASIDENTIFIER___Controller {
+extension ___VARIABLE_moduleName:identifier___Controller {
     func doSomething() {
         view.displaySomething()
     }
@@ -34,5 +34,5 @@ extension ___FILEBASENAMEASIDENTIFIER___Controller {
 
 // MARK: - Private methods
 
-extension ___FILEBASENAMEASIDENTIFIER___Controller {
+extension ___VARIABLE_moduleName:identifier___Controller {
 }
