@@ -13,7 +13,7 @@ import IGListKit
 
 final class ___VARIABLE_moduleName:identifier___Builder: UIStoryboardBuilder {
     
-    override class var name: String { get { return "___VARIABLE_moduleName:identifier___" } }
+    override class var name: String { return "___VARIABLE_moduleName:identifier___" }
     
     override class func setup(container: Container) {
         container.register(___VARIABLE_moduleName:identifier___Controller.self) { r in
