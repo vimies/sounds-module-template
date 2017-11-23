@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class ___VARIABLE_moduleName:identifier___Controller {
+final class ___VARIABLE_moduleName:identifier___Interactor {
     
     // MARK: - Injected vars
     
@@ -25,7 +25,7 @@ final class ___VARIABLE_moduleName:identifier___Controller {
 
 // MARK: - Public methods
 
-extension ___VARIABLE_moduleName:identifier___Controller {
+extension ___VARIABLE_moduleName:identifier___Interactor {
     func doSomething() {
         view.displaySomething()
     }
@@ -34,5 +34,5 @@ extension ___VARIABLE_moduleName:identifier___Controller {
 
 // MARK: - Private methods
 
-extension ___VARIABLE_moduleName:identifier___Controller {
+extension ___VARIABLE_moduleName:identifier___Interactor {
 }

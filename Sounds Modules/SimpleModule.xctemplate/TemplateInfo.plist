@@ -76,7 +76,7 @@
     </dict>
     <dict>
 			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___Controller.swift</string>
+			<string>___VARIABLE_moduleName:identifier___Interactor.swift</string>
 			<key>Description</key>
 			<string>The controller name</string>
 			<key>Identifier</key>

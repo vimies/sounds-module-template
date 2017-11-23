@@ -11,7 +11,7 @@ import IGListKit
 
 final class ___VARIABLE_moduleName:identifier___DataSectionController: ListSectionController {
     
-    weak var controller: ___VARIABLE_moduleName:identifier___Controller!
+    weak var controller: ___VARIABLE_moduleName:identifier___Interactor!
 
     private var object: String?
 

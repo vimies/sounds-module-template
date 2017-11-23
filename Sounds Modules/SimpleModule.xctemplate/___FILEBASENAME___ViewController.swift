@@ -15,7 +15,7 @@ final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController
 
     // MARK: - Injected vars
     
-    var controller: ___VARIABLE_moduleName:identifier___Controller!
+    var controller: ___VARIABLE_moduleName:identifier___Interactor!
     
     // MARK: - Private vars
 
