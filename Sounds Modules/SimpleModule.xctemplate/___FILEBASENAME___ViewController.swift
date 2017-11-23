@@ -20,10 +20,6 @@ final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController
     // MARK: - Private vars
 
     // MARK: - Public vars
-
-    // MARK: - 
-
-    deinit { printDeinit(file: #file) }
 }
 
 
@@ -31,9 +27,7 @@ final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController
 
 extension ___VARIABLE_moduleName:identifier___ViewController {
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.controller.doSomething()
+        super.viewDidLoad()        
     }
 }
 
@@ -41,8 +35,6 @@ extension ___VARIABLE_moduleName:identifier___ViewController {
 // MARK: - Public methods
 
 extension ___VARIABLE_moduleName:identifier___ViewController {
-    func displaySomething() {
-    }
 }
 
 

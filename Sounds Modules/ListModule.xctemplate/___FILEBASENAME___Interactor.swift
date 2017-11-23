@@ -14,22 +14,15 @@ final class ___VARIABLE_moduleName:identifier___Interactor {
     
     weak var view: ___VARIABLE_moduleName:identifier___ViewController!
     
-
     // MARK: - Public vars
 
     var items: [String] = []
     var isLoading: Bool = false
 
-
     // MARK: - Private vars
 
     fileprivate var noMorePages: Bool = false
     fileprivate var page: Int = 0
-
-
-    // MARK: -
-
-    deinit { printDeinit(file: #file) }
 }
 
 

@@ -15,8 +15,6 @@ final class ___VARIABLE_moduleName:identifier___DataSectionController: ListSecti
 
     private var object: String?
 
-    deinit { printDeinit(file: #file) }
-
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 55)
     }

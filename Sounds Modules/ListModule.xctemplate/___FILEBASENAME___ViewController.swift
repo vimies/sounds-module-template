@@ -29,10 +29,6 @@ final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController
     // MARK: - Private vars
 
     // MARK: - Public vars
-
-    // MARK: - 
-
-    deinit { printDeinit(file: #file) }
 }
 
 

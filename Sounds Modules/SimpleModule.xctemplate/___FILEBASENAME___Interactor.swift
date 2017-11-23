@@ -16,19 +16,12 @@ final class ___VARIABLE_moduleName:identifier___Interactor {
     
     // MARK: - Private vars
     // MARK: - Public vars
-    
-    // MARK: -
-
-    deinit { printDeinit(file: #file) }
 }
 
 
 // MARK: - Public methods
 
 extension ___VARIABLE_moduleName:identifier___Interactor {
-    func doSomething() {
-        view.displaySomething()
-    }
 }
 
 
