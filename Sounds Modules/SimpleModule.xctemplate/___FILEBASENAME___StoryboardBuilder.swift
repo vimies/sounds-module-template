@@ -16,14 +16,14 @@ final class ___VARIABLE_moduleName:identifier___StoryboardBuilder: UIStoryboardB
     
     override class func setup(container: Container) {
         container.register(___VARIABLE_moduleName:identifier___Interactor.self) { r in
-            let controller = ___VARIABLE_moduleName:identifier___Interactor()
+            let interactor = ___VARIABLE_moduleName:identifier___Interactor()
             // inject workers here
-            return controller
+            return interactor
         }
         
         container.storyboardInitCompleted(___VARIABLE_moduleName:identifier___ViewController.self) { r, vc in
-            vc.controller = r.resolve(___VARIABLE_moduleName:identifier___Interactor.self)
-            vc.controller.view = vc
+            vc.interactor = r.resolve(___VARIABLE_moduleName:identifier___Interactor.self)
+            vc.interactor.view = vc
         }
     }
 }

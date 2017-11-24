@@ -22,7 +22,7 @@ final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController
     
     // MARK: - Injected vars
 
-    var controller: ___VARIABLE_moduleName:identifier___Interactor!
+    var interactor: ___VARIABLE_moduleName:identifier___Interactor!
     var adapter: ListAdapter!
     var spinnerSectionController: ListSectionController!
     
@@ -40,7 +40,7 @@ extension ___VARIABLE_moduleName:identifier___ViewController {
         
         self.adapter.collectionView = self.collectionView
         
-        self.controller.loadData()
+        self.interactor.loadData()
     }
 }
 
@@ -63,9 +63,9 @@ fileprivate extension ___VARIABLE_moduleName:identifier___ViewController { }
 
 extension ___VARIABLE_moduleName:identifier___ViewController: ListAdapterDataSource {
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        var objects = self.controller.items as [ListDiffable]
+        var objects = self.interactor.items as [ListDiffable]
         
-        if self.controller.isLoading {
+        if self.interactor.isLoading {
             objects.append(self.spinnerToken as ListDiffable)
         }
         
@@ -77,7 +77,7 @@ extension ___VARIABLE_moduleName:identifier___ViewController: ListAdapterDataSou
             return self.spinnerSectionController
         } else {
             let sectionController = ___VARIABLE_moduleName:identifier___DataSectionController()
-            sectionController.controller = self.controller
+            sectionController.interactor = self.interactor
             return sectionController
         }
     }
@@ -94,7 +94,7 @@ extension ___VARIABLE_moduleName:identifier___ViewController: UIScrollViewDelega
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let distance = scrollView.contentSize.height - (targetContentOffset.pointee.y + scrollView.bounds.height)
         if distance < 200 {
-            self.controller.loadNextData()
+            self.interactor.loadNextData()
         }
     }
 }
