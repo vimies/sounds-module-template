@@ -82,7 +82,7 @@
 			<key>Identifier</key>
 			<string>controllerName</string>
 			<key>Name</key>
-			<string>Controller Name:</string>
+			<string>Interactor Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
