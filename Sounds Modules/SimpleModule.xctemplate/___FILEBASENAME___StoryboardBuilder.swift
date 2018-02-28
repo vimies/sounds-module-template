@@ -10,7 +10,7 @@ import Foundation
 import Swinject
 import SwinjectStoryboard
 
-final class ___VARIABLE_moduleName:identifier___StoryboardBuilder: UIStoryboardBuilder {
+final class ___VARIABLE_moduleName:identifier___Builder: UIStoryboardBuilder {
     
     override class var name: String { return "___VARIABLE_moduleName:identifier___" }
     
