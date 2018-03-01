@@ -12,12 +12,9 @@ import SwinjectStoryboard
 
 extension ___VARIABLE_moduleName:identifier___Builder {
     static func getView() -> ___VARIABLE_moduleName:identifier___ViewController? {
-
-        let instantiatedVC = self.instantiateInitialViewController() { vc in
+        return self.instantiateViewController { vc in
             // Inject vars here
         }
-        if instantiatedVC == nil { log.debugExec { AlertViewManager.showError("\(String(describing: self)) failed to init view") } } 
-        return instantiatedVC
     }
 }
 
