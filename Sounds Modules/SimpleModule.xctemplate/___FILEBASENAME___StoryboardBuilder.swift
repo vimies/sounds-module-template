@@ -16,9 +16,7 @@ final class ___VARIABLE_moduleName:identifier___StoryboardBuilder: UIStoryboardB
     
     override class func setup(container: Container) {
         container.register(___VARIABLE_moduleName:identifier___Interactor.self) { r in
-            let interactor = ___VARIABLE_moduleName:identifier___Interactor()
-            // inject workers here
-            return interactor
+            return ___VARIABLE_moduleName:identifier___Interactor()
         }
         
         container.storyboardInitCompleted(___VARIABLE_moduleName:identifier___ViewController.self) { r, vc in

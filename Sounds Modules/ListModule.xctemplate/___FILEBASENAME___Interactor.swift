@@ -21,8 +21,8 @@ final class ___VARIABLE_moduleName:identifier___Interactor {
 
     // MARK: - Private vars
 
-    fileprivate var noMorePages: Bool = false
-    fileprivate var page: Int = 0
+    private var noMorePages: Bool = false
+    private var page: Int = 0
 }
 
 
@@ -45,8 +45,8 @@ extension ___VARIABLE_moduleName:identifier___Interactor {
 	func fetchNextData() {
 		guard noMorePages == false && isLoading == false else { return }
         isLoading = true
-
-
         view.updateList()
+
+        // API call here
 	}
 }

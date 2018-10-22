@@ -9,19 +9,12 @@
 import Foundation
 import UIKit
 
-final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController {
-    
-    // MARK: - IBOutlets
+final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController {    
 
     // MARK: - Injected vars
     
     var interactor: ___VARIABLE_moduleName:identifier___Interactor!
-    
-    // MARK: - Private vars
-
-    // MARK: - Public vars
 }
-
 
 // MARK: - View lifecycle
 
@@ -31,14 +24,3 @@ extension ___VARIABLE_moduleName:identifier___ViewController {
     }
 }
 
-
-// MARK: - Public methods
-
-extension ___VARIABLE_moduleName:identifier___ViewController {
-}
-
-
-// MARK: - Private methods
-
-fileprivate extension ___VARIABLE_moduleName:identifier___ViewController {
-}

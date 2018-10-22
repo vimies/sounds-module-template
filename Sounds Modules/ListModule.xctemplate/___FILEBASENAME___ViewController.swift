@@ -25,12 +25,7 @@ final class ___VARIABLE_moduleName:identifier___ViewController: UIViewController
     var interactor: ___VARIABLE_moduleName:identifier___Interactor!
     var adapter: ListAdapter!
     var spinnerSectionController: ListSectionController!
-    
-    // MARK: - Private vars
-
-    // MARK: - Public vars
 }
-
 
 // MARK: - View lifecycle
 
@@ -44,7 +39,6 @@ extension ___VARIABLE_moduleName:identifier___ViewController {
     }
 }
 
-
 // MARK: - Public methods
 
 extension ___VARIABLE_moduleName:identifier___ViewController {
@@ -52,12 +46,6 @@ extension ___VARIABLE_moduleName:identifier___ViewController {
         self.adapter.performUpdates(animated: true, completion: nil)
     }
 }
-
-
-// MARK: - Private methods
-
-fileprivate extension ___VARIABLE_moduleName:identifier___ViewController { }
-
 
 // MARK: - ListAdapterDataSource
 
@@ -86,7 +74,6 @@ extension ___VARIABLE_moduleName:identifier___ViewController: ListAdapterDataSou
         return nil
     }
 }
-
 
 // MARK: - UIScrollViewDelegate
 
