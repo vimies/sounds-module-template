@@ -10,7 +10,15 @@ import Foundation
 import Swinject
 import SwinjectStoryboard
 
-final class ___VARIABLE_moduleName:identifier___StoryboardBuilder: UIStoryboardBuilder {
+extension ___VARIABLE_moduleName:identifier___Builder {
+    static func getView() -> ___VARIABLE_moduleName:identifier___ViewController? {
+        return self.instantiateViewController { vc in
+            // Inject vars here
+        }
+    }
+}
+
+final class ___VARIABLE_moduleName:identifier___Builder: UIStoryboardBuilder {
     
     override class var name: String { return "___VARIABLE_moduleName:identifier___" }
     

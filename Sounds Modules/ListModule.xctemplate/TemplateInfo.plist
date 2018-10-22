@@ -48,13 +48,13 @@
     </dict>
     <dict>
 			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___StoryboardBuilder.swift</string>
+			<string>___VARIABLE_moduleName:identifier___Builder.swift</string>
 			<key>Description</key>
-			<string>StoryboardBuilder name</string>
+			<string>Builder name</string>
 			<key>Identifier</key>
 			<string>storyboardName</string>
 			<key>Name</key>
-			<string>StoryboardBuilder Name:</string>
+			<string>Builder Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -82,7 +82,7 @@
 			<key>Identifier</key>
 			<string>controllerName</string>
 			<key>Name</key>
-			<string>Controller Name:</string>
+			<string>Interactor Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
